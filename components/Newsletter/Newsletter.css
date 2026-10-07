@@ -1,0 +1,530 @@
+/* =========================================================
+   AP TODAY NEWS - NEWSLETTER
+========================================================= */
+
+.ap-newsletter {
+  width: 100%;
+
+  padding: 70px 20px;
+
+  background:
+    radial-gradient(
+      circle at 10% 50%,
+      rgba(215, 25, 32, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #090909 0%,
+      #151515 55%,
+      #080808 100%
+    );
+
+  overflow: hidden;
+}
+
+.ap-newsletter-container {
+  width: min(1250px, 100%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.15fr 0.85fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.ap-newsletter-content {
+  color: #ffffff;
+}
+
+.ap-newsletter-label {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 18px;
+
+  color: #ef3a40;
+
+  font-size: 12px;
+  font-weight: 900;
+
+  letter-spacing: 1.2px;
+}
+
+.ap-newsletter-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #d71920;
+
+  box-shadow:
+    0 0 0 5px rgba(215, 25, 32, 0.12);
+}
+
+.ap-newsletter-content h2 {
+  max-width: 650px;
+
+  margin: 0;
+
+  font-size: clamp(36px, 5vw, 62px);
+
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -1.8px;
+}
+
+.ap-newsletter-content h2 span {
+  display: block;
+
+  color: #d71920;
+
+  font-weight: 900;
+}
+
+.ap-newsletter-content > p {
+  max-width: 600px;
+
+  margin: 22px 0 0;
+
+  color: #bdbdbd;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   POINTS
+========================================================= */
+
+.ap-newsletter-points {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px 28px;
+
+  margin-top: 30px;
+}
+
+.ap-newsletter-points div {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.ap-newsletter-points span {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d71920;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.ap-newsletter-points strong {
+  color: #dddddd;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   RIGHT NEWSLETTER BOX
+========================================================= */
+
+.ap-newsletter-box {
+  position: relative;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35);
+
+  overflow: hidden;
+}
+
+.ap-newsletter-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #d71920;
+}
+
+/* =========================================================
+   BOX TOP
+========================================================= */
+
+.ap-newsletter-box-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.ap-newsletter-box-top > span {
+  color: #d71920;
+
+  font-size: 11px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.2px;
+}
+
+.ap-newsletter-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f5f5;
+
+  color: #d71920;
+
+  font-size: 18px;
+}
+
+/* =========================================================
+   BOX CONTENT
+========================================================= */
+
+.ap-newsletter-box h3 {
+  margin: 0;
+
+  color: #171717;
+
+  font-size: 27px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+}
+
+.ap-newsletter-box h3 strong {
+  color: #d71920;
+
+  font-weight: 900;
+}
+
+.ap-newsletter-box > p {
+  margin: 12px 0 22px;
+
+  color: #6a6a6a;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.ap-newsletter-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.ap-newsletter-form input {
+  width: 100%;
+
+  height: 52px;
+
+  padding: 0 15px;
+
+  border: 1px solid #dddddd;
+
+  outline: none;
+
+  background: #fafafa;
+
+  color: #222222;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.ap-newsletter-form input::placeholder {
+  color: #999999;
+}
+
+.ap-newsletter-form input:focus {
+  border-color: #d71920;
+
+  background: #ffffff;
+}
+
+.ap-newsletter-form button {
+  width: 100%;
+
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  border: none;
+
+  background: #d71920;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.ap-newsletter-form button:hover {
+  background: #b9141a;
+
+  transform: translateY(-2px);
+}
+
+.ap-newsletter-form button span {
+  font-size: 18px;
+}
+
+.ap-newsletter-box small {
+  display: block;
+
+  margin-top: 13px;
+
+  color: #999999;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.ap-newsletter-success {
+  padding: 20px 0 10px;
+
+  text-align: center;
+}
+
+.ap-success-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d71920;
+
+  color: #ffffff;
+
+  font-size: 24px;
+
+  font-weight: 900;
+}
+
+.ap-newsletter-success h3 {
+  color: #171717;
+
+  font-size: 27px;
+
+  font-weight: 900;
+}
+
+.ap-newsletter-success p {
+  margin-top: 10px;
+
+  color: #666666;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   1000px
+========================================================= */
+
+@media (max-width: 1000px) {
+  .ap-newsletter {
+    padding: 55px 20px;
+  }
+
+  .ap-newsletter-container {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    max-width: 750px;
+  }
+
+  .ap-newsletter-content h2 {
+    font-size: 48px;
+  }
+
+  .ap-newsletter-content > p {
+    max-width: 680px;
+  }
+
+  .ap-newsletter-box {
+    max-width: 650px;
+  }
+}
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+  .ap-newsletter {
+    padding: 45px 15px;
+  }
+
+  .ap-newsletter-container {
+    gap: 30px;
+  }
+
+  .ap-newsletter-label {
+    font-size: 10px;
+
+    margin-bottom: 13px;
+  }
+
+  .ap-newsletter-content h2 {
+    font-size: 36px;
+
+    line-height: 1.12;
+
+    letter-spacing: -1px;
+  }
+
+  .ap-newsletter-content > p {
+    margin-top: 16px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .ap-newsletter-points {
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 22px;
+  }
+
+  .ap-newsletter-box {
+    padding: 23px;
+  }
+
+  .ap-newsletter-box h3 {
+    font-size: 23px;
+  }
+}
+
+/* =========================================================
+   400px
+========================================================= */
+
+@media (max-width: 400px) {
+  .ap-newsletter {
+    padding: 38px 12px;
+  }
+
+  .ap-newsletter-content h2 {
+    font-size: 31px;
+  }
+
+  .ap-newsletter-content > p {
+    font-size: 13px;
+  }
+
+  .ap-newsletter-points strong {
+    font-size: 11px;
+  }
+
+  .ap-newsletter-box {
+    padding: 20px;
+  }
+
+  .ap-newsletter-box h3 {
+    font-size: 21px;
+  }
+
+  .ap-newsletter-form input,
+  .ap-newsletter-form button {
+    height: 49px;
+  }
+}

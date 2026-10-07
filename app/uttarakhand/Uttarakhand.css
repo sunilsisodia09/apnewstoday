@@ -1,0 +1,939 @@
+/* =========================================================
+   AP TODAY NEWS
+   UTTARAKHAND PAGE
+========================================================= */
+
+.ap-uk-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 85px 20px 70px;
+
+  background: #f5f5f5;
+
+  color: #111111;
+
+  overflow: hidden;
+}
+
+.ap-uk-container {
+  width: min(1250px, 100%);
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ap-uk-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid #dcdcdc;
+
+  margin-bottom: 18px;
+}
+
+.ap-uk-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.ap-uk-heading-line {
+  width: 5px;
+  height: 67px;
+
+  display: block;
+
+  background: #d71920;
+}
+
+.ap-uk-eyebrow {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #d71920;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 1.2px;
+}
+
+.ap-uk-heading h1 {
+  margin: 0;
+
+  color: #171717;
+
+  font-size: 40px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: -1px;
+}
+
+.ap-uk-heading h1 span {
+  color: #d71920;
+}
+
+.ap-uk-heading p {
+  margin: 9px 0 0;
+
+  color: #777777;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ap-uk-home-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #333333;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ap-uk-home-link span {
+  color: #d71920;
+
+  font-size: 18px;
+}
+
+.ap-uk-home-link:hover {
+  color: #d71920;
+}
+
+/* =========================================================
+   DISTRICT NAVIGATION
+========================================================= */
+
+.ap-uk-districts {
+  width: 100%;
+
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e3e3;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+}
+
+.ap-uk-districts::-webkit-scrollbar {
+  display: none;
+}
+
+.ap-uk-district-title {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 18px;
+
+  flex-shrink: 0;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.ap-uk-districts a {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 17px;
+
+  flex-shrink: 0;
+
+  color: #555555;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  border-right: 1px solid #eeeeee;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.ap-uk-districts a:hover {
+  color: #d71920;
+
+  background: #fafafa;
+}
+
+/* =========================================================
+   FEATURED
+========================================================= */
+
+.ap-uk-featured {
+  display: grid;
+
+  grid-template-columns: 1.55fr 0.9fr;
+
+  gap: 22px;
+
+  margin-bottom: 40px;
+}
+
+/* =========================================================
+   MAIN STORY
+========================================================= */
+
+.ap-uk-main-story {
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  min-width: 0;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  background: #111111;
+
+  overflow: hidden;
+}
+
+.ap-uk-main-image {
+  position: relative;
+
+  min-height: 390px;
+
+  overflow: hidden;
+}
+
+.ap-uk-main-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
+}
+
+.ap-uk-main-story:hover
+.ap-uk-main-image img {
+  transform: scale(1.045);
+}
+
+.ap-uk-breaking {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  padding: 6px 10px;
+
+  background: #d71920;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.ap-uk-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.ap-uk-category {
+  width: fit-content;
+
+  margin-bottom: 14px;
+
+  padding: 5px 9px;
+
+  background: #d71920;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.ap-uk-main-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 29px;
+  line-height: 1.3;
+
+  font-weight: 900;
+}
+
+.ap-uk-main-content p {
+  margin: 16px 0 20px;
+
+  color: #bdbdbd;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+.ap-uk-read {
+  color: #ff4c52;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   SIDE NEWS
+========================================================= */
+
+.ap-uk-side {
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dedede;
+}
+
+.ap-uk-side-header {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding-bottom: 14px;
+
+  border-bottom: 2px solid #111111;
+
+  color: #171717;
+
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.ap-uk-side-header span {
+  width: 6px;
+  height: 20px;
+
+  background: #d71920;
+}
+
+.ap-uk-side-item {
+  display: grid;
+
+  grid-template-columns: 34px 1fr 18px;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 15px 0;
+
+  color: #222222;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.ap-uk-side-item:last-child {
+  border-bottom: none;
+}
+
+.ap-uk-side-number {
+  color: #d0d0d0;
+
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.ap-uk-side-content span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #d71920;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.7px;
+}
+
+.ap-uk-side-content h3 {
+  margin: 0;
+
+  color: #272727;
+
+  font-size: 13px;
+  line-height: 1.45;
+
+  font-weight: 700;
+}
+
+.ap-uk-side-item > strong {
+  color: #d71920;
+
+  font-size: 18px;
+
+  transition: transform 0.2s ease;
+}
+
+.ap-uk-side-item:hover h3 {
+  color: #d71920;
+}
+
+.ap-uk-side-item:hover > strong {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.ap-uk-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+
+  padding-bottom: 13px;
+
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.ap-uk-section-title > div {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.ap-uk-section-title > div > span {
+  width: 5px;
+  height: 27px;
+
+  background: #d71920;
+}
+
+.ap-uk-section-title h2 {
+  margin: 0;
+
+  color: #171717;
+
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.ap-uk-section-title h2 strong {
+  color: #d71920;
+}
+
+.ap-uk-section-title > a {
+  color: #444444;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.ap-uk-section-title > a:hover {
+  color: #d71920;
+}
+
+/* =========================================================
+   DISTRICT CARDS
+========================================================= */
+
+.ap-uk-cards {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.ap-uk-card {
+  min-width: 0;
+
+  color: #111111;
+
+  text-decoration: none;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e3e3;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.ap-uk-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d71920;
+}
+
+.ap-uk-card-image {
+  position: relative;
+
+  width: 100%;
+  height: 165px;
+
+  overflow: hidden;
+
+  background: #dddddd;
+}
+
+.ap-uk-card-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.ap-uk-card:hover
+.ap-uk-card-image img {
+  transform: scale(1.05);
+}
+
+.ap-uk-card-image > span {
+  position: absolute;
+
+  bottom: 9px;
+  left: 9px;
+
+  padding: 5px 8px;
+
+  background: #d71920;
+
+  color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.ap-uk-card-content {
+  padding: 14px;
+}
+
+.ap-uk-card-content small {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #d71920;
+
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.ap-uk-card-content h3 {
+  margin: 0;
+
+  color: #252525;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  font-weight: 750;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+.ap-uk-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 14px;
+  padding-top: 10px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.ap-uk-card-footer span {
+  color: #999999;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.7px;
+}
+
+.ap-uk-card-footer strong {
+  color: #d71920;
+
+  font-size: 16px;
+}
+
+/* =========================================================
+   BOTTOM INFO
+========================================================= */
+
+.ap-uk-bottom {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 35px;
+
+  padding: 22px 25px;
+
+  background: #111111;
+
+  color: #ffffff;
+}
+
+.ap-uk-bottom-icon {
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d71920;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.ap-uk-bottom h3 {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.ap-uk-bottom p {
+  margin: 0;
+
+  color: #aaaaaa;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ap-uk-bottom > a {
+  margin-left: auto;
+
+  flex-shrink: 0;
+
+  color: #ff4c52;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.ap-uk-bottom > a:hover {
+  color: #ffffff;
+}
+
+/* =========================================================
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+  .ap-uk-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-uk-main-image {
+    min-height: 360px;
+  }
+
+  .ap-uk-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================================
+   800px
+========================================================= */
+
+@media (max-width: 800px) {
+  .ap-uk-page {
+    padding: 40px 15px 55px;
+  }
+
+  .ap-uk-main-story {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-uk-main-image {
+    height: 320px;
+    min-height: 0;
+  }
+
+  .ap-uk-main-content {
+    padding: 23px;
+  }
+
+  .ap-uk-main-content h2 {
+    font-size: 26px;
+  }
+
+  .ap-uk-side {
+    padding: 16px;
+  }
+
+  .ap-uk-bottom {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .ap-uk-bottom > a {
+    width: 100%;
+    margin-left: 73px;
+  }
+}
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+  .ap-uk-page {
+    padding: 32px 10px 45px;
+  }
+
+  .ap-uk-header {
+    align-items: center;
+
+    margin-bottom: 14px;
+  }
+
+  .ap-uk-heading {
+    gap: 10px;
+  }
+
+  .ap-uk-heading-line {
+    width: 4px;
+    height: 55px;
+  }
+
+  .ap-uk-eyebrow {
+    font-size: 8px;
+  }
+
+  .ap-uk-heading h1 {
+    font-size: 29px;
+  }
+
+  .ap-uk-heading p {
+    font-size: 10px;
+  }
+
+  .ap-uk-home-link {
+    font-size: 9px;
+  }
+
+  .ap-uk-home-link span {
+    font-size: 15px;
+  }
+
+  .ap-uk-districts {
+    margin-bottom: 18px;
+  }
+
+  .ap-uk-district-title,
+  .ap-uk-districts a {
+    height: 43px;
+  }
+
+  .ap-uk-district-title {
+    padding: 0 13px;
+
+    font-size: 9px;
+  }
+
+  .ap-uk-districts a {
+    padding: 0 13px;
+
+    font-size: 10px;
+  }
+
+  .ap-uk-main-image {
+    height: 245px;
+  }
+
+  .ap-uk-main-content {
+    padding: 18px;
+  }
+
+  .ap-uk-main-content h2 {
+    font-size: 22px;
+  }
+
+  .ap-uk-main-content p {
+    font-size: 12px;
+
+    margin: 11px 0 15px;
+  }
+
+  .ap-uk-side-item {
+    grid-template-columns: 28px 1fr 15px;
+
+    padding: 12px 0;
+  }
+
+  .ap-uk-side-content h3 {
+    font-size: 12px;
+  }
+
+  .ap-uk-section-title h2 {
+    font-size: 21px;
+  }
+
+  .ap-uk-cards {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .ap-uk-card-image {
+    height: 110px;
+  }
+
+  .ap-uk-card-content {
+    padding: 10px;
+  }
+
+  .ap-uk-card-content h3 {
+    font-size: 11px;
+  }
+
+  .ap-uk-card-footer {
+    margin-top: 9px;
+    padding-top: 7px;
+  }
+
+  .ap-uk-bottom {
+    padding: 17px;
+
+    gap: 12px;
+  }
+
+  .ap-uk-bottom-icon {
+    width: 45px;
+    height: 45px;
+
+    font-size: 14px;
+  }
+
+  .ap-uk-bottom h3 {
+    font-size: 14px;
+  }
+
+  .ap-uk-bottom p {
+    font-size: 10px;
+  }
+
+  .ap-uk-bottom > a {
+    margin-left: 57px;
+
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   400px
+========================================================= */
+
+@media (max-width: 400px) {
+  .ap-uk-heading h1 {
+    font-size: 25px;
+  }
+
+  .ap-uk-heading p {
+    font-size: 9px;
+  }
+
+  .ap-uk-main-image {
+    height: 215px;
+  }
+
+  .ap-uk-main-content h2 {
+    font-size: 20px;
+  }
+
+  .ap-uk-side {
+    padding: 12px;
+  }
+
+  .ap-uk-side-content h3 {
+    font-size: 11px;
+  }
+
+  .ap-uk-cards {
+    gap: 8px;
+  }
+
+  .ap-uk-card-image {
+    height: 90px;
+  }
+
+  .ap-uk-card-content {
+    padding: 8px;
+  }
+
+  .ap-uk-card-content h3 {
+    font-size: 10px;
+  }
+}

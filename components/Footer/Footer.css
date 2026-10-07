@@ -1,0 +1,1080 @@
+
+
+.ap-footer {
+  position: relative;
+  width: 100%;
+
+  background: #0b0d10;
+  color: #ffffff;
+
+  overflow: hidden;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   FOOTER CONTAINER
+========================================================= */
+
+.ap-footer-container {
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  padding-left: 32px;
+  padding-right: 32px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   FOOTER GRID
+========================================================= */
+
+.ap-footer-grid {
+  display: grid;
+
+  grid-template-columns: 1.6fr 1fr 1fr 1.15fr;
+
+  gap: 55px;
+
+  padding-top: 75px;
+  padding-bottom: 70px;
+}
+
+.ap-footer-container.ap-footer-container {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.ap-footer-brand {
+  max-width: 390px;
+}
+
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.ap-footer-logo {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 24px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* =========================================================
+   AP LOGO BOX
+========================================================= */
+
+.ap-logo-ap {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e31b23;
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 900;
+
+  letter-spacing: -1px;
+
+  border-radius: 7px;
+}
+
+/* =========================================================
+   LOGO TEXT
+========================================================= */
+
+.ap-logo-text {
+  display: flex;
+  flex-direction: column;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+.ap-logo-text small {
+  margin-top: 5px;
+
+  color: #a7a7a7;
+
+  font-size: 9px;
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+/* =========================================================
+   BRAND DESCRIPTION
+========================================================= */
+
+.ap-footer-brand > p {
+  max-width: 370px;
+
+  margin: 0;
+
+  color: #aeb2b7;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.ap-social-links {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 27px;
+}
+
+.ap-social-links a {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #d9d9d9;
+
+  background: #171a1e;
+
+  border: 1px solid #292d32;
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ap-social-links a:hover {
+  background: #e31b23;
+  color: #ffffff;
+
+  border-color: #e31b23;
+
+  transform: translateY(-3px);
+}
+
+.ap-social-links svg {
+  width: 18px;
+  height: 18px;
+
+  display: block;
+}
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.ap-footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* =========================================================
+   COLUMN TITLE
+========================================================= */
+
+.ap-footer-column h3 {
+  position: relative;
+
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  letter-spacing: 0.4px;
+}
+
+/* =========================================================
+   TITLE RED LINE
+========================================================= */
+
+.ap-footer-column h3::after {
+  content: "";
+
+  display: block;
+
+  width: 34px;
+  height: 3px;
+
+  margin-top: 9px;
+
+  background: #e31b23;
+
+  border-radius: 10px;
+}
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+.ap-footer-column > a {
+  position: relative;
+
+  display: inline-block;
+
+  width: fit-content;
+
+  margin-bottom: 13px;
+
+  color: #aeb2b7;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+.ap-footer-column > a:hover {
+  color: #ffffff;
+
+  padding-left: 5px;
+}
+
+/* =========================================================
+   CONTACT COLUMN
+========================================================= */
+
+.ap-contact-column {
+  min-width: 0;
+}
+
+/* =========================================================
+   CONTACT ITEM
+========================================================= */
+
+.ap-contact-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  width: 100%;
+
+  margin-bottom: 18px;
+
+  color: #aeb2b7;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.ap-contact-icon {
+  flex: 0 0 20px;
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #e31b23;
+}
+
+.ap-contact-icon svg {
+  width: 19px;
+  height: 19px;
+
+  display: block;
+}
+
+/* =========================================================
+   CONTACT LINKS
+========================================================= */
+
+.ap-contact-item a {
+  color: #aeb2b7;
+
+  text-decoration: none;
+
+  word-break: break-word;
+
+  transition: color 0.25s ease;
+}
+
+.ap-contact-item a:hover {
+  color: #ffffff;
+}
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+.ap-footer-newsletter {
+  width: 100%;
+
+  background: #14171b;
+
+  border-top: 1px solid #24282d;
+  border-bottom: 1px solid #24282d;
+}
+
+.ap-newsletter-inner {
+  min-height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* =========================================================
+   NEWSLETTER LABEL
+========================================================= */
+
+.ap-newsletter-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #e31b23;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   NEWSLETTER TITLE
+========================================================= */
+
+.ap-newsletter-inner h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 23px;
+  line-height: 1.3;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   NEWSLETTER BUTTON
+========================================================= */
+
+.ap-newsletter-button {
+  flex-shrink: 0;
+
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 25px;
+
+  background: #e31b23;
+  color: #ffffff;
+
+  border: 1px solid #e31b23;
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ap-newsletter-button:hover {
+  background: #c9151d;
+
+  border-color: #c9151d;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   BOTTOM BAR
+========================================================= */
+
+.ap-footer-bottom {
+  width: 100%;
+
+  background: #080a0d;
+}
+
+.ap-footer-bottom-inner {
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.ap-footer-bottom p {
+  margin: 0;
+
+  color: #777d84;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   BOTTOM LINKS
+========================================================= */
+
+.ap-footer-bottom-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  flex-wrap: wrap;
+
+  gap: 22px;
+}
+
+.ap-footer-bottom-links a {
+  color: #858b91;
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.ap-footer-bottom-links a:hover {
+  color: #ffffff;
+}
+
+/* =========================================================
+   LARGE TABLET
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+  .ap-footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+
+    gap: 45px;
+  }
+
+  .ap-footer-brand {
+    max-width: 100%;
+  }
+
+  .ap-contact-column {
+    grid-column: 1 / -1;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 30px;
+  }
+
+  .ap-contact-column h3 {
+    grid-column: 1 / -1;
+  }
+
+  .ap-contact-item {
+    margin-bottom: 0;
+  }
+}
+
+/* =========================================================
+   TABLET
+   900px
+========================================================= */
+
+@media (max-width: 900px) {
+  .ap-footer-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .ap-footer-grid {
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 45px 35px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .ap-footer-brand {
+    grid-column: 1 / -1;
+
+    max-width: 650px;
+  }
+
+  .ap-footer-brand > p {
+    max-width: 600px;
+  }
+
+  .ap-contact-column {
+    grid-column: auto;
+
+    display: flex;
+  }
+
+  .ap-contact-column h3 {
+    grid-column: auto;
+  }
+
+  .ap-contact-item {
+    margin-bottom: 17px;
+  }
+
+  .ap-newsletter-inner {
+    min-height: auto;
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .ap-newsletter-inner h3 {
+    font-size: 21px;
+  }
+
+  .ap-footer-bottom-inner {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+/* =========================================================
+   MOBILE LARGE
+   700px
+
+   IMPORTANT:
+   Brand = Full Width
+   Quick Links = Left
+   News Categories = Right
+   Contact = Full Width
+========================================================= */
+
+@media (max-width: 700px) {
+  .ap-footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ap-footer-grid {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 25px;
+    row-gap: 38px;
+
+    padding-top: 50px;
+    padding-bottom: 48px;
+  }
+
+  /* =====================================================
+     BRAND — FULL WIDTH
+  ===================================================== */
+
+  .ap-footer-brand {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ap-footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .ap-logo-ap {
+    width: 46px;
+    height: 46px;
+
+    font-size: 19px;
+  }
+
+  .ap-logo-text {
+    font-size: 22px;
+  }
+
+  .ap-footer-brand > p {
+    max-width: 100%;
+
+    font-size: 13.5px;
+    line-height: 1.75;
+  }
+
+  /* =====================================================
+     SOCIAL
+  ===================================================== */
+
+  .ap-social-links {
+    margin-top: 23px;
+  }
+
+  /* =====================================================
+     QUICK LINKS + NEWS CATEGORIES
+     SIDE BY SIDE
+  ===================================================== */
+
+  .ap-footer-column {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /*
+     First normal column = Quick Links
+     Second normal column = News Categories
+  */
+
+  .ap-footer-column:nth-child(2),
+  .ap-footer-column:nth-child(3) {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .ap-footer-column h3 {
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+    white-space: nowrap;
+  }
+
+  .ap-footer-column > a {
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* =====================================================
+     CONTACT — FULL WIDTH
+  ===================================================== */
+
+  .ap-contact-column {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ap-contact-item {
+    width: 100%;
+
+    margin-bottom: 16px;
+  }
+
+  /* =====================================================
+     NEWSLETTER
+  ===================================================== */
+
+  .ap-newsletter-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .ap-newsletter-inner h3 {
+    font-size: 20px;
+  }
+
+  .ap-newsletter-button {
+    width: 100%;
+  }
+
+  /* =====================================================
+     BOTTOM
+  ===================================================== */
+
+  .ap-footer-bottom-inner {
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 16px;
+
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .ap-footer-bottom-links {
+    justify-content: center;
+
+    gap: 12px 18px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+  .ap-footer-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* =====================================================
+     LOGO
+  ===================================================== */
+
+  .ap-logo-ap {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 6px;
+
+    font-size: 18px;
+  }
+
+  .ap-logo-text {
+    font-size: 20px;
+  }
+
+  .ap-logo-text small {
+    font-size: 8px;
+
+    letter-spacing: 3px;
+  }
+
+  /* =====================================================
+     DESCRIPTION
+  ===================================================== */
+
+  .ap-footer-brand > p {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+  /* =====================================================
+     SOCIAL
+  ===================================================== */
+
+  .ap-social-links {
+    gap: 8px;
+
+    margin-top: 22px;
+  }
+
+  .ap-social-links a {
+    width: 37px;
+    height: 37px;
+  }
+
+  .ap-social-links svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  /* =====================================================
+     GRID
+
+     QUICK LINKS + CATEGORIES STAY SIDE BY SIDE
+  ===================================================== */
+
+  .ap-footer-grid {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 18px;
+    row-gap: 34px;
+
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  /* Brand full width */
+
+  .ap-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  /* Quick Links */
+
+  .ap-footer-column:nth-child(2) {
+    grid-column: 1;
+  }
+
+  /* News Categories */
+
+  .ap-footer-column:nth-child(3) {
+    grid-column: 2;
+  }
+
+  /* Contact full width */
+
+  .ap-contact-column {
+    grid-column: 1 / -1;
+  }
+
+  /* =====================================================
+     HEADINGS
+  ===================================================== */
+
+  .ap-footer-column h3 {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+  }
+
+  /* =====================================================
+     LINKS
+  ===================================================== */
+
+  .ap-footer-column > a {
+    margin-bottom: 10px;
+
+    font-size: 12px;
+  }
+
+  /* =====================================================
+     CONTACT
+  ===================================================== */
+
+  .ap-contact-item {
+    gap: 10px;
+
+    font-size: 13px;
+  }
+
+  .ap-contact-icon {
+    flex-basis: 19px;
+
+    width: 19px;
+    height: 19px;
+  }
+
+  .ap-contact-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* =====================================================
+     NEWSLETTER
+  ===================================================== */
+
+  .ap-newsletter-inner {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  .ap-newsletter-label {
+    font-size: 10px;
+
+    letter-spacing: 1.7px;
+  }
+
+  .ap-newsletter-inner h3 {
+    font-size: 18px;
+
+    line-height: 1.4;
+  }
+
+  .ap-newsletter-button {
+    min-height: 44px;
+
+    font-size: 12px;
+  }
+
+  /* =====================================================
+     BOTTOM
+  ===================================================== */
+
+  .ap-footer-bottom p {
+    font-size: 11px;
+  }
+
+  .ap-footer-bottom-links {
+    gap: 10px 15px;
+  }
+
+  .ap-footer-bottom-links a {
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+  .ap-footer-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .ap-footer-grid {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 14px;
+    row-gap: 28px;
+
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  /* =====================================================
+     LOGO
+  ===================================================== */
+
+  .ap-logo-ap {
+    width: 40px;
+    height: 40px;
+
+    font-size: 17px;
+  }
+
+  .ap-logo-text {
+    font-size: 18px;
+  }
+
+  .ap-logo-text small {
+    font-size: 7px;
+  }
+
+  .ap-footer-brand > p {
+    font-size: 12.5px;
+  }
+
+  /* =====================================================
+     SOCIAL
+  ===================================================== */
+
+  .ap-social-links a {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* =====================================================
+     QUICK LINKS + NEWS CATEGORIES
+  ===================================================== */
+
+  .ap-footer-column h3 {
+    font-size: 13px;
+  }
+
+  .ap-footer-column > a {
+    font-size: 11.5px;
+
+    margin-bottom: 9px;
+  }
+
+  /* =====================================================
+     CONTACT
+  ===================================================== */
+
+  .ap-contact-column {
+    grid-column: 1 / -1;
+  }
+
+  /* =====================================================
+     NEWSLETTER
+  ===================================================== */
+
+  .ap-newsletter-inner h3 {
+    font-size: 17px;
+  }
+
+  /* =====================================================
+     BOTTOM
+  ===================================================== */
+
+  .ap-footer-bottom-links {
+    gap: 8px 12px;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.ap-footer a:focus-visible {
+  outline: 2px solid #e31b23;
+
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .ap-footer *,
+  .ap-footer *::before,
+  .ap-footer *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,776 @@
+/* =========================================================
+   BUSINESS PAGE
+========================================================= */
+
+.ap-business-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f5f5;
+  color: #111;
+  padding: 85px 0 70px;
+}
+
+.ap-business-container {
+  width: min(1240px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ap-business-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.ap-business-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ap-business-heading-line {
+  width: 5px;
+  min-width: 5px;
+  height: 75px;
+  background: #d71920;
+  margin-top: 4px;
+}
+
+.ap-business-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  color: #d71920;
+  margin-bottom: 5px;
+}
+
+.ap-business-heading h1 {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+}
+
+.ap-business-heading h1 span {
+  color: #d71920;
+}
+
+.ap-business-heading p {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #666;
+  font-weight: 500;
+}
+
+.ap-business-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.ap-business-home span {
+  color: #d71920;
+  font-size: 18px;
+}
+
+.ap-business-home:hover {
+  background: #d71920;
+}
+
+.ap-business-home:hover span {
+  color: #fff;
+}
+
+/* =========================================================
+   CATEGORY NAV
+========================================================= */
+
+.ap-business-categories {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  overflow-x: auto;
+  background: #111;
+  border-bottom: 3px solid #d71920;
+  scrollbar-width: none;
+}
+
+.ap-business-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.ap-business-category-title {
+  flex-shrink: 0;
+  padding: 16px 22px;
+  background: #d71920;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ap-business-categories a {
+  flex-shrink: 0;
+  padding: 16px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.25s ease;
+}
+
+.ap-business-categories a:hover {
+  background: #d71920;
+}
+
+/* =========================================================
+   FEATURED
+========================================================= */
+
+.ap-business-featured {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(330px, 0.85fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+/* MAIN STORY */
+
+.ap-business-main-story {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  min-height: 410px;
+  background: #fff;
+  text-decoration: none;
+  color: #111;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.ap-business-main-image {
+  position: relative;
+  min-height: 410px;
+  overflow: hidden;
+}
+
+.ap-business-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.ap-business-main-story:hover
+.ap-business-main-image img {
+  transform: scale(1.04);
+}
+
+.ap-business-breaking {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #d71920;
+  color: #fff;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ap-business-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px 30px;
+}
+
+.ap-business-tag {
+  width: fit-content;
+  color: #d71920;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+}
+
+.ap-business-main-content h2 {
+  margin: 0;
+  font-size: clamp(24px, 2.4vw, 34px);
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: -0.7px;
+}
+
+.ap-business-main-content p {
+  margin: 18px 0 22px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.ap-business-read {
+  color: #d71920;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   SIDE NEWS
+========================================================= */
+
+.ap-business-side {
+  background: #fff;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.ap-business-side-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.ap-business-side-header span {
+  width: 5px;
+  height: 23px;
+  background: #d71920;
+}
+
+.ap-business-side-item {
+  display: grid;
+  grid-template-columns: 42px 1fr 18px;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #111;
+}
+
+.ap-business-side-item:last-child {
+  border-bottom: 0;
+}
+
+.ap-business-number {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ddd;
+}
+
+.ap-business-side-item small {
+  display: block;
+  color: #d71920;
+  font-size: 10px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.ap-business-side-item h3 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.ap-business-side-item strong {
+  color: #d71920;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.ap-business-side-item:hover h3 {
+  color: #d71920;
+}
+
+.ap-business-side-item:hover strong {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.ap-business-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 0 22px;
+}
+
+.ap-business-section-title > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ap-business-section-title > div > span {
+  width: 5px;
+  height: 30px;
+  background: #d71920;
+}
+
+.ap-business-section-title h2 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.ap-business-section-title h2 strong {
+  color: #d71920;
+}
+
+.ap-business-section-title a {
+  color: #d71920;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.ap-business-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ap-business-card {
+  display: block;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ap-business-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.11);
+}
+
+.ap-business-card-image {
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+}
+
+.ap-business-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.ap-business-card:hover
+.ap-business-card-image img {
+  transform: scale(1.05);
+}
+
+.ap-business-card-image span {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 6px 9px;
+  background: #d71920;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.ap-business-card-content {
+  padding: 18px;
+}
+
+.ap-business-card-content small {
+  display: block;
+  color: #d71920;
+  font-size: 10px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.ap-business-card-content h3 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 800;
+}
+
+.ap-business-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding-top: 13px;
+  border-top: 1px solid #eee;
+}
+
+.ap-business-card-footer span {
+  font-size: 9px;
+  font-weight: 800;
+  color: #999;
+  letter-spacing: 0.8px;
+}
+
+.ap-business-card-footer strong {
+  color: #d71920;
+  font-size: 18px;
+}
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.ap-business-bottom {
+  display: grid;
+  grid-template-columns: 75px 1fr auto;
+  align-items: center;
+  gap: 22px;
+  margin-top: 45px;
+  padding: 28px 32px;
+  background: #111;
+  color: #fff;
+}
+
+.ap-business-bottom-icon {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  background: #d71920;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.ap-business-bottom h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.ap-business-bottom p {
+  margin: 0;
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ap-business-bottom a {
+  padding: 13px 18px;
+  border: 1px solid #d71920;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: 0.25s ease;
+}
+
+.ap-business-bottom a:hover {
+  background: #d71920;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .ap-business-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-business-main-story {
+    min-height: 380px;
+  }
+
+  .ap-business-main-image {
+    min-height: 380px;
+  }
+
+  .ap-business-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* =========================================================
+   TABLET / SMALL
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .ap-business-page {
+    padding: 32px 0 55px;
+  }
+
+  .ap-business-container {
+    width: min(100% - 28px, 700px);
+  }
+
+  .ap-business-header {
+    align-items: flex-start;
+  }
+
+  .ap-business-heading p {
+    font-size: 13px;
+  }
+
+  .ap-business-main-story {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-business-main-image {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .ap-business-main-content {
+    padding: 25px;
+  }
+
+  .ap-business-main-content h2 {
+    font-size: 28px;
+  }
+
+  .ap-business-side {
+    padding: 20px;
+  }
+
+  .ap-business-bottom {
+    grid-template-columns: 62px 1fr;
+  }
+
+  .ap-business-bottom a {
+    grid-column: 2;
+    width: fit-content;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .ap-business-page {
+    padding: 25px 0 45px;
+  }
+
+  .ap-business-container {
+    width: calc(100% - 24px);
+  }
+
+  .ap-business-header {
+    display: block;
+  }
+
+  .ap-business-heading {
+    gap: 11px;
+  }
+
+  .ap-business-heading-line {
+    width: 4px;
+    min-width: 4px;
+    height: 65px;
+  }
+
+  .ap-business-eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+  }
+
+  .ap-business-heading h1 {
+    font-size: 34px;
+  }
+
+  .ap-business-heading p {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .ap-business-home {
+    margin-top: 17px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .ap-business-categories {
+    margin-top: 22px;
+  }
+
+  .ap-business-category-title,
+  .ap-business-categories a {
+    padding: 13px 15px;
+    font-size: 12px;
+  }
+
+  .ap-business-featured {
+    margin-top: 20px;
+    gap: 18px;
+  }
+
+  .ap-business-main-image {
+    height: 235px;
+    min-height: 235px;
+  }
+
+  .ap-business-breaking {
+    top: 12px;
+    left: 12px;
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+
+  .ap-business-main-content {
+    padding: 20px;
+  }
+
+  .ap-business-main-content h2 {
+    font-size: 23px;
+    line-height: 1.3;
+  }
+
+  .ap-business-main-content p {
+    margin: 12px 0 17px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .ap-business-side {
+    padding: 17px;
+  }
+
+  .ap-business-side-header {
+    font-size: 16px;
+  }
+
+  .ap-business-side-item {
+    grid-template-columns: 32px 1fr 14px;
+    gap: 8px;
+    padding: 14px 0;
+  }
+
+  .ap-business-number {
+    font-size: 19px;
+  }
+
+  .ap-business-side-item h3 {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .ap-business-section-title {
+    margin: 35px 0 17px;
+  }
+
+  .ap-business-section-title h2 {
+    font-size: 22px;
+  }
+
+  .ap-business-section-title a {
+    font-size: 11px;
+  }
+
+  .ap-business-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ap-business-card-image {
+    height: 220px;
+  }
+
+  .ap-business-card-content {
+    padding: 16px;
+  }
+
+  .ap-business-card-content h3 {
+    font-size: 16px;
+  }
+
+  .ap-business-bottom {
+    grid-template-columns: 52px 1fr;
+    gap: 14px;
+    padding: 22px 18px;
+    margin-top: 30px;
+  }
+
+  .ap-business-bottom-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 23px;
+  }
+
+  .ap-business-bottom h3 {
+    font-size: 16px;
+  }
+
+  .ap-business-bottom p {
+    font-size: 11px;
+  }
+
+  .ap-business-bottom a {
+    grid-column: 1 / -1;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .ap-business-heading h1 {
+    font-size: 30px;
+  }
+
+  .ap-business-heading p {
+    font-size: 11px;
+  }
+
+  .ap-business-main-content h2 {
+    font-size: 21px;
+  }
+
+  .ap-business-card-image {
+    height: 195px;
+  }
+
+  .ap-business-section-title h2 {
+    font-size: 20px;
+  }
+
+}
