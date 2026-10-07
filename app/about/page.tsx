@@ -25,14 +25,38 @@ const highlights = [
 ];
 
 const coverage = [
-  "उत्तराखंड",
-  "भारत",
-  "राजनीति",
-  "बिज़नेस",
-  "खेल",
-  "मनोरंजन",
-  "शिक्षा",
-  "टेक्नोलॉजी",
+  {
+    name: "उत्तराखंड",
+    href: "/uttarakhand",
+  },
+  {
+    name: "भारत",
+    href: "/india",
+  },
+  {
+    name: "राजनीति",
+    href: "/politics",
+  },
+  {
+    name: "बिज़नेस",
+    href: "/business",
+  },
+  {
+    name: "खेल",
+    href: "/sports",
+  },
+  {
+    name: "मनोरंजन",
+    href: "/entertainment",
+  },
+  {
+    name: "शिक्षा",
+    href: "/education",
+  },
+  {
+    name: "टेक्नोलॉजी",
+    href: "/technology",
+  },
 ];
 
 export default function AboutPage() {
@@ -63,6 +87,7 @@ export default function AboutPage() {
           </p>
 
           <div className="ap-about-breadcrumb">
+
             <Link href="/">
               होम
             </Link>
@@ -72,6 +97,7 @@ export default function AboutPage() {
             <strong>
               हमारे बारे में
             </strong>
+
           </div>
 
         </div>
@@ -139,6 +165,96 @@ export default function AboutPage() {
 
 
       {/* =====================================================
+          OWNER / FOUNDER
+      ===================================================== */}
+
+      <section className="ap-about-owner">
+
+        <div className="ap-about-container">
+
+          <div className="ap-about-owner-grid">
+
+            {/* LEFT - OWNER INFORMATION */}
+
+            <div className="ap-about-owner-content">
+
+              <span className="ap-section-label">
+                AP TODAY NEWS
+              </span>
+
+              <h2>
+                हमारे <span>संस्थापक</span>
+              </h2>
+
+              <div className="ap-about-owner-line"></div>
+
+              <h3>
+                V.s Rawat
+              </h3>
+
+              <p className="ap-about-owner-role">
+                Founder &amp; Director
+              </p>
+
+              <p>
+                AP Today News की शुरुआत एक ऐसे डिजिटल न्यूज़
+                प्लेटफॉर्म के उद्देश्य से की गई है, जहां
+                उत्तराखंड और देश-दुनिया से जुड़ी महत्वपूर्ण
+                खबरें पाठकों तक सरल, स्पष्ट और तेज़ तरीके से
+                पहुंच सकें।
+              </p>
+
+              <p>
+                हमारा प्रयास स्थानीय मुद्दों, जनहित से जुड़े
+                विषयों और महत्वपूर्ण घटनाक्रमों को प्रमुखता
+                देते हुए पाठकों के लिए एक भरोसेमंद डिजिटल
+                न्यूज़ प्लेटफॉर्म तैयार करना है।
+              </p>
+
+              <blockquote>
+                “हमारा उद्देश्य सिर्फ खबर पहुंचाना नहीं,
+                बल्कि लोगों तक सही और महत्वपूर्ण जानकारी
+                पहुंचाना है।”
+              </blockquote>
+
+            </div>
+
+
+            {/* RIGHT - OWNER IMAGE */}
+
+            <div className="ap-about-owner-image">
+
+              <div className="ap-about-owner-image-frame">
+
+                <img
+                  src="/images/gallery/owner.jpg"
+                  alt="Sunil Singh Sisodia - Founder of AP Today News"
+                />
+
+              </div>
+
+              <div className="ap-about-owner-image-caption">
+
+                <strong>
+                V.s Rawat
+                </strong>
+
+                <span>
+                  Founder &amp; Director — AP Today News
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
           STATS / IDENTITY STRIP
       ===================================================== */}
 
@@ -186,6 +302,7 @@ export default function AboutPage() {
           <div className="ap-about-section-heading">
 
             <div>
+
               <span className="ap-section-label">
                 WHAT WE COVER
               </span>
@@ -194,6 +311,7 @@ export default function AboutPage() {
                 हम किन खबरों पर
                 <span> फोकस करते हैं?</span>
               </h2>
+
             </div>
 
             <p>
@@ -210,27 +328,17 @@ export default function AboutPage() {
             {coverage.map((item, index) => (
 
               <Link
-                href={
-                  item === "उत्तराखंड"
-                    ? "/uttarakhand"
-                    : item === "राजनीति"
-                    ? "/politics"
-                    : item === "बिज़नेस"
-                    ? "/business"
-                    : item === "खेल"
-                    ? "/sports"
-                    : `/${item.toLowerCase()}`
-                }
+                href={item.href}
                 className="ap-about-focus-card"
-                key={item}
+                key={item.name}
               >
 
                 <span className="ap-focus-number">
-                  0{index + 1}
+                  {String(index + 1).padStart(2, "0")}
                 </span>
 
                 <h3>
-                  {item}
+                  {item.name}
                 </h3>
 
                 <span className="ap-focus-arrow">
@@ -259,6 +367,7 @@ export default function AboutPage() {
           <div className="ap-about-section-heading dark-heading">
 
             <div>
+
               <span className="ap-section-label">
                 OUR APPROACH
               </span>
@@ -267,6 +376,7 @@ export default function AboutPage() {
                 AP Today News की
                 <span> प्राथमिकताएं</span>
               </h2>
+
             </div>
 
           </div>

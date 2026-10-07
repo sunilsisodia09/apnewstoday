@@ -20,24 +20,24 @@ const categories = [
       },
     ],
   },
-  {
-    title: "भारत",
-    subtitle: "देश की प्रमुख खबरें",
-    href: "/india",
-    icon: "IN",
-    news: [
-      {
-        image: "/news/india-1.jpg",
-        title: "देशभर की बड़ी खबरों और अहम अपडेट पर नजर",
-        href: "/india",
-      },
-      {
-        image: "/news/india-2.jpg",
-        title: "देश से जुड़े महत्वपूर्ण घटनाक्रम सामने आए",
-        href: "/india",
-      },
-    ],
-  },
+  // {
+  //   title: "भारत",
+  //   subtitle: "देश की प्रमुख खबरें",
+  //   href: "/india",
+  //   icon: "IN",
+  //   news: [
+  //     {
+  //       image: "/news/india-1.jpg",
+  //       title: "देशभर की बड़ी खबरों और अहम अपडेट पर नजर",
+  //       href: "/india",
+  //     },
+  //     {
+  //       image: "/news/india-2.jpg",
+  //       title: "देश से जुड़े महत्वपूर्ण घटनाक्रम सामने आए",
+  //       href: "/india",
+  //     },
+  //   ],
+  // },
   {
     title: "राजनीति",
     subtitle: "राजनीतिक खबरें और अपडेट",
@@ -92,60 +92,43 @@ const categories = [
       },
     ],
   },
-  {
-    title: "मनोरंजन",
-    subtitle: "फिल्म और मनोरंजन जगत",
-    href: "/entertainment",
-    icon: "ENT",
-    news: [
-      {
-        image: "/news/entertainment-1.jpg",
-        title: "मनोरंजन जगत से सामने आई बड़ी खबरें",
-        href: "/entertainment",
-      },
-      {
-        image: "/news/entertainment-2.jpg",
-        title: "फिल्म और सेलिब्रिटी अपडेट यहां पढ़ें",
-        href: "/entertainment",
-      },
-    ],
-  },
-  {
-    title: "शिक्षा",
-    subtitle: "एजुकेशन और करियर अपडेट",
-    href: "/education",
-    icon: "EDU",
-    news: [
-      {
-        image: "/news/education-1.jpg",
-        title: "शिक्षा और करियर से जुड़े महत्वपूर्ण अपडेट",
-        href: "/education",
-      },
-      {
-        image: "/news/education-2.jpg",
-        title: "छात्रों के लिए जरूरी खबरों पर नजर",
-        href: "/education",
-      },
-    ],
-  },
-  {
-    title: "टेक्नोलॉजी",
-    subtitle: "टेक और डिजिटल दुनिया",
-    href: "/technology",
-    icon: "TECH",
-    news: [
-      {
-        image: "/news/tech-1.jpg",
-        title: "टेक्नोलॉजी की दुनिया से जुड़े नए अपडेट",
-        href: "/technology",
-      },
-      {
-        image: "/news/tech-2.jpg",
-        title: "डिजिटल दुनिया में सामने आई नई खबरें",
-        href: "/technology",
-      },
-    ],
-  },
+  // {
+  //   title: "मनोरंजन",
+  //   subtitle: "फिल्म और मनोरंजन जगत",
+  //   href: "/entertainment",
+  //   icon: "ENT",
+  //   news: [
+  //     {
+  //       image: "/news/entertainment-1.jpg",
+  //       title: "मनोरंजन जगत से सामने आई बड़ी खबरें",
+  //       href: "/entertainment",
+  //     },
+  //     {
+  //       image: "/news/entertainment-2.jpg",
+  //       title: "फिल्म और सेलिब्रिटी अपडेट यहां पढ़ें",
+  //       href: "/entertainment",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "शिक्षा",
+  //   subtitle: "एजुकेशन और करियर अपडेट",
+  //   href: "/education",
+  //   icon: "EDU",
+  //   news: [
+  //     {
+  //       image: "/news/education-1.jpg",
+  //       title: "शिक्षा और करियर से जुड़े महत्वपूर्ण अपडेट",
+  //       href: "/education",
+  //     },
+  //     {
+  //       image: "/news/education-2.jpg",
+  //       title: "छात्रों के लिए जरूरी खबरों पर नजर",
+  //       href: "/education",
+  //     },
+  //   ],
+  // },
+ 
 ];
 
 export default function CategorySection() {

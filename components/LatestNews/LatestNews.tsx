@@ -83,7 +83,7 @@ const latestNews: NewsItem[] = [
     image: "/news/news-2.jpg",
 
     youtube:
-      "https://youtu.be/xfWDnrqVZ6A?si=ca56a6SIxsHcwf47",
+      "https://youtu.be/joRUpjnPQ5c?si=3baEffUnPn2W1Xub",
   },
 
   {
@@ -106,7 +106,7 @@ const latestNews: NewsItem[] = [
     image: "/news/news-3.jpg",
 
     youtube:
-      "https://youtu.be/xfWDnrqVZ6A?si=ca56a6SIxsHcwf47",
+      "https://youtu.be/UnLjSqkjg9g?si=ZbZUyRXIFhyU6jak",
   },
 
   {
@@ -637,16 +637,7 @@ export default function LatestNews() {
           </div>
 
 
-          <Link
-            href="/news"
-            className="latest-news-view-all"
-          >
-
-            सभी खबरें
-
-            <ArrowRight size={18} />
-
-          </Link>
+       
 
         </div>
 

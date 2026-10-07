@@ -320,12 +320,7 @@ export default function Footer() {
 
           </div>
 
-          <Link
-            href="/latest-news"
-            className="ap-newsletter-button"
-          >
-            Read Latest News
-          </Link>
+          
 
         </div>
 

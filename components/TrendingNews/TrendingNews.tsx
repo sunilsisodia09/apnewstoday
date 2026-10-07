@@ -75,13 +75,7 @@ export default function TrendingNews() {
 
           </div>
 
-          <Link
-            href="/news"
-            className="ap-trending-all"
-          >
-            सभी खबरें
-            <span>→</span>
-          </Link>
+         
 
         </div>
 
