@@ -1,12 +1,12 @@
 "use client";
 
-import { Menu, Search, X } from "lucide-react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import "./Navbar.css";
 
 const navItems = [
   { name: "होम", href: "/" },
-  // { name: "भारत", href: "/india" },
   { name: "उत्तराखंड", href: "/uttarakhand" },
   { name: "राजनीति", href: "/politics" },
   { name: "बिजनेस", href: "/business" },
@@ -16,57 +16,70 @@ const navItems = [
 export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
+  const closeMobileMenu = () => {
+    setMobileMenu(false);
+  };
+
   return (
     <header className="news-navbar">
       <div className="navbar-container">
 
         {/* LOGO */}
-        <a href="/" className="navbar-logo">
+        <Link
+          href="/"
+          className="navbar-logo"
+          onClick={closeMobileMenu}
+          aria-label="AP Today News 24 Home"
+        >
           <span className="logo-ap">AP</span>
 
           <span className="logo-text">
             <strong>TODAY</strong>
             <small>NEWS</small>
           </span>
-        </a>
+        </Link>
 
         {/* DESKTOP NAVIGATION */}
-        <nav className="desktop-nav">
+        <nav className="desktop-nav" aria-label="Main navigation">
           {navItems.map((item) => (
-            <a key={item.name} href={item.href}>
+            <Link key={item.href} href={item.href}>
               {item.name}
-            </a>
+            </Link>
           ))}
         </nav>
 
         {/* RIGHT ACTIONS */}
         <div className="navbar-actions">
-
-          
-
+          {/* MOBILE MENU BUTTON */}
           <button
-            className="mobile-menu-button"
-            onClick={() => setMobileMenu(!mobileMenu)}
-            aria-label="Toggle menu"
             type="button"
+            className="mobile-menu-button"
+            onClick={() => setMobileMenu((prev) => !prev)}
+            aria-label={mobileMenu ? "मेनू बंद करें" : "मेनू खोलें"}
+            aria-expanded={mobileMenu}
+            aria-controls="mobile-navigation"
           >
             {mobileMenu ? <X size={25} /> : <Menu size={25} />}
           </button>
-
         </div>
       </div>
 
-      {/* MOBILE MENU */}
-      <div className={`mobile-nav ${mobileMenu ? "open" : ""}`}>
-        {navItems.map((item) => (
-          <a
-            key={item.name}
-            href={item.href}
-            onClick={() => setMobileMenu(false)}
-          >
-            {item.name}
-          </a>
-        ))}
+      {/* MOBILE NAVIGATION */}
+      <div
+        id="mobile-navigation"
+        className={`mobile-nav ${mobileMenu ? "open" : ""}`}
+      >
+        <nav aria-label="Mobile navigation">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={closeMobileMenu}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
       </div>
     </header>
   );
